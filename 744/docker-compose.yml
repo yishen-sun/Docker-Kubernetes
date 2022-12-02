@@ -1,0 +1,10 @@
+version: '3'
+services:
+  classifier: 
+    build: classifier/.
+    ports:
+      - "8000:5000"
+  web:
+    build: web/.
+    ports:
+      - "9000:80"
