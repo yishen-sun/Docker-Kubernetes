@@ -8,8 +8,14 @@
       .bordered {
         padding: 2rem;
         width: 80%;
-        margin: 2rem auto;
-        border: 0.5rem solid black;
+        margin: 1rem auto;
+      }
+      #display-image {
+        width: 400px;
+        height: 225px;
+        border: 1px solid black;
+        background-position: center;
+        background-size: cover;
       }
     </style>
   </head>
@@ -17,24 +23,16 @@
     <!-- JavaScript -->
 
     <div id="wrapper" class="bordered">
-      <div id="counter"></div>
-      <h1 id="header" style="color: green">our great company</h1>
-      <p id="intro">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quaerat!
-      </p>
-      <p>
-        First name:
-        <input
-          type="text"
-          id="fname"
-          placeholder="your first name"
-          value="john"
-        />
-      </p>
+      <h1 id="header" style="color: green">CS744 Group 4 Project Demo</h1>
+      <p>This project is to balabala...</p>
+      <p>Please upload an image</p>
+      <input
+        type="file"
+        id="image-input"
+        accept="image/jpeg, image/png, image/jpg"
+      />
+      <div id="display-image"></div>
     </div>
-    <button id="btn">click me</button>
-    <button id="clear">clear wrapper</button>
-    <div id="q1c"></div>
     <script src="index.js"></script>
   </body>
 </html>
